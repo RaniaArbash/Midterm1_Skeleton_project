@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/studentName"
+        android:hint="Enter Your Name"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/personalImageID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/name">
+
+    </ImageView>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="uploade"
+        android:text="Your Image">
+
+    </Button>
+    <Button
+        android:id="@+id/button2"
+        android:onClick="addYearandLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Level and Year">
+
+    </Button>
+
+    <Button
+        android:id="@+id/button3"
+        android:text="Save"
+        android:onClick="saveStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+</LinearLayout>
